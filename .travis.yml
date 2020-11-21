@@ -3,5 +3,8 @@ jdk: openjdk8
 
 sudo: required
 
+script:
+- ./mvnw clean install -B
+
 after_deploy:
   - echo "done deploying"
