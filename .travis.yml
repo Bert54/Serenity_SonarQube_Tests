@@ -1,6 +1,8 @@
 language: java
 jdk: openjdk8
 
+sudo: required
+
 addons:
   sonarcloud:
     organization: "bert54"
