@@ -3,5 +3,13 @@ jdk: openjdk8
 
 sudo: required
 
+addons:
+  sonarcloud:
+    organization: "bert54"
+    token: ${SONAR_TOKEN}
+
+script:
+  - mvn clean verify sonar:sonar -Pcoverage
+
 after_deploy:
   - echo "done deploying"
