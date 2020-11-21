@@ -10,14 +10,12 @@ import static com.jayway.restassured.RestAssured.given;
 import static com.ul.vclc.calculator.model.services.CalculatorService.DEFAULT_RANDOM_UPPER_BOUND;
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+@SpringBootTest(classes = CalculatorApplication.class, webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 class CalculatorApplicationTests {
 
     @BeforeAll
     public static void setup() {
-        RestAssured.port = 8080;
         RestAssured.basePath = "/calculator";
-        RestAssured.baseURI = "http://localhost";
     }
 
     @Test
