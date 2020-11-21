@@ -10,7 +10,7 @@ addons:
       secure: "MI0p+JKpzSB57DYei6V5ZgYWuVJuIZ5QwMUKJiGWo9IsA2p9kIWRqvFgDg7Zd92SCkGSneMN4IY1q21vyJoK2WdVnbRrkDmuZypJvFfco5ROyDLYbFN+glUgRNCpavER5I+Tbokt1qKoKIZmwDu5rc35a/9DW1XjU/TtctsGbvhP2md6L7PdM+li3LlubTLqzJSqKS8XV1z6cJS9Bk376GoIJ9K4AC+gz34mPqWFJfeDw8aKvQ3YFSz5xf2XFmOvr49KSl3GU3leHH+1RsqA/AvjeGW/sawWRWAQ3uxF7KiYv1Ag1nGbIVQR4z8jgU2PoNG6ZclB+mhdVWB1QJ1eUZnFDg+esps+Pq8BiH6PMO/tG2a4OeRxY87savyHQ7MppHoFkJYgys9hfSZ15ItEm8xOGWeEWVd5VGRZtOBMGD7NI/9hItFtY27vOazPGwmhwT66NJTZAYkhh5lHA5Ip04yv7oR84CmTIfZPyuGOrnL5TIrzK2cmZtITxF26F5gBGm8FNPmNP7vmZXZX4nm3EsEX7xba2kNLkMCcMV6u51A810gXB5uak05hSz3Xg4UV0M+ebtB/OfWZ2gorQaB2j6Dk16vv6WD9aB2q4A/cF3Wp96zp4XsAUMVpzyNmfPX6MC8ZpLep4QMQ051LQexF/GwqTAdx05X3FAA+cGUJICE="
 
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=Bert54_Serenity_SonarQube_Tests
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
 
 after_deploy:
   - echo "done deploying"
